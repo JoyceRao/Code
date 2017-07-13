@@ -152,3 +152,11 @@ func anyCommonElemnts<T: Sequence, U: Sequence>(_ lhs: T, _ rhs: U)-> Bool where
 }
 
 anyCommonElemnts([1, 2, 3], [4])
+
+let exclamationMark: Character = "!"
+
+var welcome = "Hello Wrod!"
+welcome.insert(",", at: welcome.index(welcome.startIndex, offsetBy: 5))
+welcome.insert(contentsOf: ",,,,".characters, at: welcome.index(welcome.startIndex, offsetBy: 5))
+var ssRemove = welcome.remove(at: welcome.index(before: welcome.endIndex))
+print(welcome)
